@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot Sustentabilidade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="buttons.css">
+  <link rel="stylesheet" href="dropdownmenu.css">
+</head>
+<body>
+  <div class="container">
+    <div id="titlebox">
+      <h1>Chatbot Sustentabilidade 🌱</h1>
+    </div>
+
+    <div class="chat-container">
+    {% if resposta %}
+          <h3>Resposta</h3>
+          <p>{{ resposta }}</p>
+      {% endif %}
+
+      {% if resumo %}
+          <h3>Resumo</h3>
+          <p>{{ resumo }}</p>
+      {% endif %}
+    </div>
+
+    <div class="box">
+      <form method="post">
+        <div class="chat-input">
+          <input onclick="sendMessage()" type="text" name="pergunta" placeholder="Pergunta ou texto para sumarizar..." required>
+        </div>
+        
+        <div class="actions">
+          <button class="animated-button" type="submit" name="acao" value="pergunta">
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+            <span class="text">Enviar Pergunta</span>
+            <span class="circle"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+              ></path>
+            </svg>
+          </button>
+          
+          <button class="animated-button" id=sum type="submit" name="acao" value="sumarizar">
+            <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+              <span class="text">Sumarizar</span>
+              <span class="circle"></span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+                <path
+                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                ></path>
+              </svg>
+          </button>
+
+        <label for="pet-select">Sentences:</label>
+        <select id="pet-select">
+          <button>
+            <selectedcontent></selectedcontent>
+          </button>
+
+          <option value="">Selecione a sentença</option>
+
+          <option value="1">
+            <span class="option-label">1</span>
+          </option>
+          
+          <option value="2">
+            <span class="option-label" selected>2</span>
+          </option>
+                
+          <option value="3">
+            <span class="option-label">3</span>
+          </option>
+
+        </select>
+    </div>
+  </form>
+
+</div>
+      
+
+  </body>
+</html>
