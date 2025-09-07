@@ -1,0 +1,41 @@
+{
+  "intencoes": [
+    {
+      "nome": "reciclagem_basica",
+      "padroes": ["\\brecicla(r|gem)\\b", "coleta seletiva", "separa(c|ç)ão de lixo", "como reciclar"],
+      "respostas": [
+        "Reciclar começa separando papel, plástico, vidro e metal. Lave embalagens para evitar contaminação.",
+        "Use lixeiras identificadas por material. Aplastando embalagens você economiza espaço.",
+        "Separe orgânicos dos recicláveis; resíduos orgânicos vão em composteira quando possível."
+      ]
+    },
+    {
+      "nome": "lixo_eletronico",
+      "padroes": ["lixo eletr(ô|o)nico", "e-lixo", "pilhas? e baterias?", "descarte de eletr(ô|o)nicos?"],
+      "respostas": [
+        "Lixo eletrônico deve ser levado a pontos de coleta específicos ou comércio que faça logística reversa.",
+        "Pilhas e baterias não devem ir ao lixo comum. Procure por pontos de coleta em mercados ou ecopontos."
+      ]
+    },
+    {
+      "nome": "transporte_sustentavel",
+      "padroes": ["transporte sustent(á|a)vel", "bike", "bicicleta", "carona", "transporte p(ú|u)blico"],
+      "respostas": [
+        "Prefira caminhar, usar bicicleta ou transporte público. Caronas e transporte compartilhado reduzem emissões.",
+        "Planeje rotas combinando modais (ônibus + bike) para reduzir tempo e impacto ambiental."
+      ]
+    },
+    {
+      "nome": "cop30_info",
+      "padroes": ["cop30", "confer(ê|e)ncia do clima", "evento clima", "cop"],
+      "respostas": [
+        "A COP é a conferência anual sobre clima. Consulte a programação local para eventos paralelos e oficinas.",
+        "Durante a COP, procure pontos de informação sobre mobilidade sustentável e parcerias locais."
+      ]
+    }
+  ],
+  "fallbacks": [
+    "Desculpe, não entendi bem. Pode reformular a pergunta com mais detalhes?",
+    "Posso ajudar com reciclagem, descarte de lixo eletrônico, transporte sustentável e informações sobre a COP30. O que você quer saber?"
+  ]
+}
