@@ -3,18 +3,26 @@
 <head>
   <meta charset="utf-8">
   <title>Chatbot Sustentabilidade</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="buttons.css">
   <link rel="stylesheet" href="dropdownmenu.css">
+  <link rel="stylesheet" href="input.css">
 </head>
 <body>
   <div class="container">
     <div id="titlebox">
       <h1>Chatbot Sustentabilidade 🌱</h1>
     </div>
-
+  
     <div class="chat-container">
-    {% if resposta %}
+      <div class="botmessage">
+        <p id="botmessage"> <p>
+      </div>
+
+      <div class="usermessage">
+        <p id="usermessage"> <p>
+      </div>
+    <!--{% if resposta %}
           <h3>Resposta</h3>
           <p>{{ resposta }}</p>
       {% endif %}
@@ -23,16 +31,16 @@
           <h3>Resumo</h3>
           <p>{{ resumo }}</p>
       {% endif %}
+    -->
     </div>
 
     <div class="box">
       <form method="post">
-        <div class="chat-input">
-          <input onclick="sendMessage()" type="text" name="pergunta" placeholder="Pergunta ou texto para sumarizar..." required>
-        </div>
+          <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+          <input  class="input" type="text" name="pergunta" placeholder="Pergunta ou texto para sumarizar..." required>
         
         <div class="actions">
-          <button class="animated-button" type="submit" name="acao" value="pergunta">
+          <button onclick="sendMessage()" class="animated-button" type="submit" name="acao" value="pergunta">
             <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
               <path
                 d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
@@ -47,7 +55,7 @@
             </svg>
           </button>
           
-          <button class="animated-button" id=sum type="submit" name="acao" value="sumarizar">
+          <button onclick="sendMessage()" class="animated-button" id=sum type="submit" name="acao" value="sumarizar">
             <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
                 <path
                   d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
@@ -88,6 +96,6 @@
 
 </div>
       
-
+  <script src="script.js"></script>
   </body>
 </html>
