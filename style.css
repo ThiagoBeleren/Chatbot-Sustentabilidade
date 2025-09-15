@@ -1,8 +1,0 @@
-body { font-family: Arial, sans-serif; background: #f7f9f8; color: #222; }
-.container { width: 600px; margin: 30px auto; text-align: center; }
-.box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
-input[type=text] { width: 90%; padding: 10px; margin: 10px 0; border-radius: 4px; border: 1px solid #ccc; }
-.actions { display: flex; gap: 10px; justify-content:center; align-items:center; margin-top: 8px; }
-button { padding: 8px 12px; border-radius: 6px; border: none; cursor: pointer; background: #2d9c6d; color: white; }
-.resposta { text-align: left; margin-top: 12px; padding: 8px; border-left: 4px solid #2d9c6d; background: #f2fbf6; border-radius: 4px; }
-footer { margin-top: 12px; color: #666; font-size: 0.9em; }
